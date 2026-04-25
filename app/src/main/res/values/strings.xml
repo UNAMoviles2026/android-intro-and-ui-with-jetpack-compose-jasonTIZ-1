@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">UnaRoom</string>
+    <string name="login_title">Iniciar sesion</string>
+    <string name="login_subtitle">Reserva tu aula universitaria</string>
+    <string name="login_email_label">Correo electronico</string>
+    <string name="login_password_label">Contrasena</string>
+    <string name="login_button">Iniciar sesion</string>
+    <string name="login_email_error">Ingresa un correo valido</string>
+    <string name="login_password_error">La contrasena debe tener al menos 6 caracteres</string>
 </resources>
