@@ -8,7 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.moviles.unaroom.ui.screens.classrooms.ClassroomsScreen
+import com.moviles.unaroom.ui.screens.classrooms.ClassroomsListScreen
 import com.moviles.unaroom.ui.screens.login.LoginScreen
 
 @Composable
@@ -31,8 +31,7 @@ fun AppNavHost(innerPadding: PaddingValues) {
         }
 
         composable(route = AppDestinations.CLASSROOMS) {
-            ClassroomsScreen()
+            ClassroomsListScreen()
         }
     }
 }
-

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/moviles/unaroom/ui/components/ClassroomCard.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/java/com/moviles/unaroom/ui/components/ClassroomCard.kt" />
+              <option name="updatedContent" value="package com.moviles.unaroom.ui.components&#10;&#10;import androidx.compose.foundation.layout.Column&#10;import androidx.compose.foundation.layout.fillMaxWidth&#10;import androidx.compose.foundation.layout.padding&#10;import androidx.compose.material3.Card&#10;import androidx.compose.material3.CardDefaults&#10;import androidx.compose.material3.MaterialTheme&#10;import androidx.compose.material3.Text&#10;import androidx.compose.runtime.Composable&#10;import androidx.compose.ui.Modifier&#10;import androidx.compose.ui.unit.dp&#10;import com.moviles.unaroom.data.Classroom&#10;&#10;@Composable&#10;fun ClassroomCard(&#10;    classroom: Classroom,&#10;    modifier: Modifier = Modifier&#10;) {&#10;    Card(&#10;        modifier = modifier.fillMaxWidth(),&#10;        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)&#10;    ) {&#10;        Column(modifier = Modifier.padding(16.dp)) {&#10;            Text(&#10;                text = classroom.name,&#10;                style = MaterialTheme.typography.titleMedium&#10;            )&#10;            Text(&#10;                text = &quot;Capacity: ${classroom.capacity}&quot;,&#10;                style = MaterialTheme.typography.bodyMedium&#10;            )&#10;            Text(&#10;                text = &quot;Location: ${classroom.location}&quot;,&#10;                style = MaterialTheme.typography.bodyMedium&#10;            )&#10;        }&#10;    }&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/moviles/unaroom/ui/screens/classrooms/ClassroomsListScreen.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/java/com/moviles/unaroom/ui/screens/classrooms/ClassroomsListScreen.kt" />
+              <option name="updatedContent" value="package com.moviles.unaroom.ui.screens.classrooms&#10;&#10;import androidx.compose.foundation.layout.Arrangement&#10;import androidx.compose.foundation.layout.PaddingValues&#10;import androidx.compose.foundation.layout.fillMaxSize&#10;import androidx.compose.foundation.layout.padding&#10;import androidx.compose.foundation.lazy.LazyColumn&#10;import androidx.compose.foundation.lazy.items&#10;import androidx.compose.material3.Scaffold&#10;import androidx.compose.material3.Text&#10;import androidx.compose.material3.TopAppBar&#10;import androidx.compose.runtime.Composable&#10;import androidx.compose.ui.Modifier&#10;import androidx.compose.ui.tooling.preview.Preview&#10;import androidx.compose.ui.unit.dp&#10;import com.moviles.unaroom.data.Classroom&#10;import com.moviles.unaroom.ui.components.ClassroomCard&#10;import com.moviles.unaroom.ui.theme.UnaRoomTheme&#10;&#10;private val mockClassrooms = listOf(&#10;    Classroom(name = &quot;A-101&quot;, capacity = 30, location = &quot;Building A&quot;),&#10;    Classroom(name = &quot;B-204&quot;, capacity = 45, location = &quot;Building B&quot;),&#10;    Classroom(name = &quot;Lab-3&quot;, capacity = 20, location = &quot;Tech Wing&quot;),&#10;    Classroom(name = &quot;C-302&quot;, capacity = 60, location = &quot;Building C&quot;)&#10;)&#10;&#10;@Composable&#10;fun ClassroomsListScreen(&#10;    classrooms: List&lt;Classroom&gt; = mockClassrooms,&#10;    modifier: Modifier = Modifier&#10;) {&#10;    Scaffold(&#10;        topBar = {&#10;            TopAppBar(&#10;                title = { Text(text = &quot;Available Classrooms&quot;) }&#10;            )&#10;        },&#10;        modifier = modifier.fillMaxSize()&#10;    ) { innerPadding -&gt;&#10;        LazyColumn(&#10;            modifier = Modifier&#10;                .fillMaxSize()&#10;                .padding(innerPadding),&#10;            contentPadding = PaddingValues(16.dp),&#10;            verticalArrangement = Arrangement.spacedBy(12.dp)&#10;        ) {&#10;            items(classrooms) { classroom -&gt;&#10;                ClassroomCard(classroom = classroom)&#10;            }&#10;        }&#10;    }&#10;}&#10;&#10;@Preview(showBackground = true)&#10;@Composable&#10;private fun ClassroomsListScreenPreview() {&#10;    UnaRoomTheme {&#10;        ClassroomsListScreen()&#10;    }&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
